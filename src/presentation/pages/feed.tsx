@@ -1,5 +1,7 @@
+import { Header } from '@/presentation/shared/components/layout'
+
 export default function Feed() {
   return(
-    <h1>hello page</h1>
+    <Header />
   )
 }
