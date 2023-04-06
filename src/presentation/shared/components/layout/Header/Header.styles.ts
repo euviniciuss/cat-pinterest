@@ -31,6 +31,7 @@ export const NavigationContainer = styled('div', {
     fontWeight: '600',
     fontSize: '$3',
     transition: 'filter 0.2s',
+    whiteSpace: 'nowrap',
 
     '&:first-child': {
       background: '$red400',

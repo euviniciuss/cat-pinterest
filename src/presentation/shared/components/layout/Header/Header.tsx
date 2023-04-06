@@ -1,6 +1,8 @@
 import { Logo } from './Logo'
 import { Navigation } from './Navigation'
 
+import { Search } from '@/presentation/shared/components/form'
+
 import * as S from './Header.styles'
 
 export function Header() {
@@ -11,8 +13,9 @@ export function Header() {
 
         <Navigation />
         
-        {/* 
         <Search />
+        
+        {/* 
 
         <Icon />
         <Icon />
