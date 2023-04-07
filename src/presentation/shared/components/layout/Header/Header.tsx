@@ -1,5 +1,6 @@
 import { Logo } from './Logo'
 import { Navigation } from './Navigation'
+import { Actions } from './Actions'
 
 import { Search } from '@/presentation/shared/components/form'
 
@@ -10,16 +11,9 @@ export function Header() {
     <S.Container>
       <S.Wrapper>
         <Logo />
-
         <Navigation />
-        
         <Search />
-        
-        {/* 
-
-        <Icon />
-        <Icon />
-        <UserSection /> */}
+        <Actions />
       </S.Wrapper>
     </S.Container>
   )

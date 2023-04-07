@@ -11,6 +11,7 @@ export const { styled, css, globalCss, theme, createTheme, getCssText, config } 
     colors: {
       red400: '#E60023',
       gray100: '#F3F0EB',
+      gray500: '#333739',
       gray600: '#282B2D',
       gray800: '#1A1D1E',
       gray900: '#0E0F0F',

@@ -45,3 +45,10 @@ export const NavigationContainer = styled('div', {
   }
   
 })
+
+export const ActionsContainer = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '1.2rem'
+})
