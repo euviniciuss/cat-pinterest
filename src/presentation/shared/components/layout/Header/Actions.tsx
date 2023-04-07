@@ -1,5 +1,8 @@
 import { IconButton } from '@/presentation/shared/components/form'
-import { Bell, ChatCircleDots } from '@phosphor-icons/react'
+
+import user from '@/assets/images/user.jpg'
+
+import { Bell, ChatCircleDots, CaretDown } from '@phosphor-icons/react'
 
 import * as S from './Header.styles'
 
@@ -13,6 +16,12 @@ export function Actions() {
         <IconButton>
           <ChatCircleDots size={26} color='#BDB6A9' weight='fill' />
         </IconButton>
+
+        <S.UserSection>
+          <img src={user} alt='Icon user' />
+        </S.UserSection>
+
+        <CaretDown size={18} color='#BDB6A9' weight='bold' />
     </S.ActionsContainer>
   )
 }

@@ -43,7 +43,6 @@ export const NavigationContainer = styled('div', {
       filter: 'brightness(0.9)'
     }
   }
-  
 })
 
 export const ActionsContainer = styled('div', {
@@ -51,4 +50,33 @@ export const ActionsContainer = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '1.2rem'
+})
+
+export const UserSection = styled('button', {
+  border: 'none',
+  outline: 'none',
+  background: 'transparent',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+  padding: '0.6rem',
+  borderRadius: '50%',
+  transition: 'background 0.2s',
+
+  '&:focus': {
+    outline: 'none',
+  },
+
+  '&:hover': {
+    background: '$gray500',
+  },
+
+  img: {
+    width: '4.5rem',
+    height: '4.5rem',
+    borderRadius: '50%',
+    objectFit: 'cover'
+  }
 })
