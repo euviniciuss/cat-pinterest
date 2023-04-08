@@ -25,7 +25,10 @@ export const globalStyles = globalCss({
     fontFamily: '$primary',
     fontSize: '$2',
     overflowX: 'hidden',
-    fontSmooth: 'antialiased'
+    fontSmooth: 'antialiased',
+    
+    background: '$gray800',
+    color: '$gray100',
   },
 
   a: {

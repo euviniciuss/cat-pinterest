@@ -19,7 +19,7 @@ export const Wrapper = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '1.6rem',
-  padding: '0.4rem 1.6rem',
+  padding: '0.4rem 2.6rem',
 })
 
 export const NavigationContainer = styled('div', {
