@@ -11,25 +11,39 @@ import * as S from './FeedSection.styles'
 export function FeedSection() {
   return(
     <S.Container>
-      <ImageContainer sizeImg='lg'>
-        <img src={pin1} alt="Carty pin"/>
-      </ImageContainer>
+      {
+        Array(10).fill(1).map((_, index) => (
+          <div key={index}>
+            <ImageContainer sizeImg='lg'>
+              <img src={pin1} alt="Carty pin"/>
+            </ImageContainer>
 
-      <ImageContainer sizeImg='sm'>
-        <img src={pin2} alt="Carty pin"/>
-      </ImageContainer>
+            <ImageContainer sizeImg='sm'>
+              <img src={pin2} alt="Carty pin"/>
+            </ImageContainer>
 
-      <ImageContainer sizeImg='md'>
-        <img src={pin3} alt="Carty pin"/>
-      </ImageContainer>
+            <ImageContainer sizeImg='md'>
+              <img src={pin3} alt="Carty pin"/>
+            </ImageContainer>
 
-      <ImageContainer sizeImg='md'>
-        <img src={pin4} alt="Carty pin"/>
-      </ImageContainer>
+            <ImageContainer sizeImg='md'>
+              <img src={pin4} alt="Carty pin"/>
+            </ImageContainer>
 
-      <ImageContainer sizeImg='1-sm'>
-        <img src={pin5} alt="Carty pin"/>
-      </ImageContainer>
+            <ImageContainer sizeImg='1-sm'>
+              <img src={pin5} alt="Carty pin"/>
+            </ImageContainer>
+
+            <ImageContainer sizeImg='md'>
+              <img src={pin3} alt="Carty pin"/>
+            </ImageContainer>
+
+            <ImageContainer sizeImg='sm'>
+              <img src={pin2} alt="Carty pin"/>
+            </ImageContainer>
+          </div>
+        ))
+      }  
     </S.Container>
   )
 }

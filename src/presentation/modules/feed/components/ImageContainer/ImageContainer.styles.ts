@@ -4,9 +4,10 @@ export const Container = styled('div', {
   cursor: 'pointer',
   position: 'relative',
   width: '236px',
+  marginBottom: '1.6rem',
 
   img: {
-    width: '100%',
+    width: '236px',
     height: '100%',
     borderRadius: '$5',
     objectFit: 'cover'
