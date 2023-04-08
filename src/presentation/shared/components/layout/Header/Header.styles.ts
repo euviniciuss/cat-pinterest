@@ -2,6 +2,7 @@ import { styled } from '@/presentation/external/stitches/core'
 
 export const Container = styled('header', {
   width: '100vw',
+  height: '8rem',
   background: '$gray800',
   position: 'fixed',
   top: '0',
@@ -15,9 +16,10 @@ export const Wrapper = styled('div', {
 
   display: 'flex',
   flexDirection: 'row',
+  justifyContent: 'center',
   alignItems: 'center',
   gap: '1.6rem',
-  padding: '2.8rem 1.7rem',
+  padding: '0.4rem 1.6rem',
 })
 
 export const NavigationContainer = styled('div', {
@@ -29,14 +31,14 @@ export const NavigationContainer = styled('div', {
     textAlign: 'center',
     color: '$gray100',
     fontWeight: '600',
-    fontSize: '$3',
+    fontSize: '$2',
     transition: 'filter 0.2s',
     whiteSpace: 'nowrap',
 
     '&:first-child': {
       background: '$red400',
       borderRadius: '5.5rem',
-      padding: '1.5rem 1.6rem'
+      padding: '1.2rem 1.6rem'
     },
 
     '&:hover': {
@@ -49,7 +51,7 @@ export const ActionsContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '1.2rem'
+  gap: '0.15rem'
 })
 
 export const UserSection = styled('button', {
@@ -74,8 +76,8 @@ export const UserSection = styled('button', {
   },
 
   img: {
-    width: '4.5rem',
-    height: '4.5rem',
+    width: '3.2rem',
+    height: '3.2rem',
     borderRadius: '50%',
     objectFit: 'cover'
   }

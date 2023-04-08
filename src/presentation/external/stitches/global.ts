@@ -9,7 +9,7 @@ export const globalStyles = globalCss({
   html: {
     fontSize: '62.5%',
     scrollBehavior: 'smooth',
-
+  
     '@bp3': {
       fontSize: '56.25%'
     },
@@ -17,7 +17,7 @@ export const globalStyles = globalCss({
       fontSize: '50%'
     },
     '@bp1': {
-      fontSize: '43,75%'
+      fontSize: '43.75%'
     }
   },
   body: {

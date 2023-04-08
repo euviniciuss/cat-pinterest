@@ -9,7 +9,7 @@ export const Button = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   cursor: 'pointer',
-  padding: '1.2rem 1.4rem',
+  padding: '1.2rem 1.2rem',
   borderRadius: '50%',
   transition: 'background 0.2s',
 

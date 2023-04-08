@@ -3,9 +3,9 @@ import type * as Stitches from '@stitches/react'
 
 export const { styled, css, globalCss, theme, createTheme, getCssText, config } = createStitches({
   media: {
-    bp1: '(min-width: 640px)',
-    bp2: '(min-width: 768px)',
-    bp3: '(min-width: 1024px)',
+    bp1: '(max-width: 640px)',
+    bp2: '(max-width: 768px)',
+    bp3: '(max-width: 1024px)',
   },
   theme: {
     colors: {

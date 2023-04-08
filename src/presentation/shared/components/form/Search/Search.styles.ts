@@ -1,15 +1,16 @@
 import { styled } from '@/presentation/external/stitches/core'
 
 export const Container = styled('form', {
-  height: '5.8rem',
+  height: '4.8rem',
   width: '100%',
-  padding: '0 2rem',
+  padding: '0 1.6rem',
   background: '$gray600',
   borderRadius: '$8',
 
   display: 'flex',
   alignItems: 'center',
-  gap: '$2'
+  gap: '$2',
+  ml: '2rem'
 })
 
 export const Input = styled('input', {
@@ -18,7 +19,7 @@ export const Input = styled('input', {
   background: 'transparent',
   border: 'none',
   color: '$gray100',
-  fontSize: '$3',
+  fontSize: '$2',
 
   '&:focus': {
     outline: 'none',
