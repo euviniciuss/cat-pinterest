@@ -12,4 +12,16 @@ export const Container = styled('div', {
     borderRadius: '$5',
     objectFit: 'cover'
   },
+
+  '@bp3': {
+    width: '194px',
+  },
+
+  '@bp2': {
+    width: '244px',
+  },
+
+  '@bp1': {
+    width: '194px',
+  }
 })

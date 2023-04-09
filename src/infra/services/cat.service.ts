@@ -2,7 +2,7 @@ import { CatProps } from '@/business/types/cat'
 
 const initialUrl = {
   base_url: 'https://api.thecatapi.com/v1/images/search?',
-  limit: 'limit=50&',
+  limit: 'limit=10&',
   auth: `api_key=${import.meta.env.VITE_API_KEY}`
 }
 

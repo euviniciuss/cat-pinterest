@@ -5,4 +5,16 @@ export const Container = styled('section', {
 
   columnCount: '7',
   columnGap: '1.6rem',
+
+  '@bp3': {
+    columnCount: '5'
+  },
+  
+  '@bp2': {
+    columnCount: '3'
+  },
+
+  '@bp1': {
+    columnCount: '2'
+  }
 })

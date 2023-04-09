@@ -16,7 +16,6 @@ export function FeedSection() {
       console.error(err)
     }
   }
-  
 
   useEffect(() => {
     loadCats()
