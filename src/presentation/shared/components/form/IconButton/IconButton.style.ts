@@ -9,7 +9,7 @@ export const Button = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   cursor: 'pointer',
-  padding: '1.2rem 1.2rem',
+  
   borderRadius: '50%',
   transition: 'background 0.2s',
 
@@ -17,7 +17,23 @@ export const Button = styled('button', {
     outline: 'none',
   },
 
-  '&:hover': {
-    background: '$gray500',
+  variants: {
+    size: {
+      'sm': {
+        background: 'rgba(0, 0, 0, 0.6)',
+        padding: '0.6rem',
+
+        '&:hover': {
+          background: 'rgba(0, 0, 0, 0.8)',
+        },
+      },
+      'md': {
+        padding: '1.2rem',
+
+        '&:hover': {
+          background: '$gray500',
+        },
+      },
+    }
   }
 })

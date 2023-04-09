@@ -5,11 +5,13 @@ export const Button = styled('button', {
   outline: 'none',
   cursor: 'pointer',
   background: '$red400',
-  borderRadius: '5.5rem',
-  padding: '1.2rem 1.6rem',
+  borderRadius: '6rem',
+  padding: '1.5rem 1.6rem',
   transition: 'filter 0.2s',
   color: '$gray100',
+  fontSize: '1.5rem',
   fontWeight: '600',
+  textAlign: 'center',
 
   '&:focus': {
     outline: 'none',
