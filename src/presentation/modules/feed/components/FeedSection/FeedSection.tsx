@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react'
+import { CatService, CatProps } from '@/infra/services/cat.service'
 
 import { ImageContainer } from '../ImageContainer/ImageContainer'
 
 import * as S from './FeedSection.styles'
 
 export function FeedSection() {
-  const [images, setImages] = useState([])
+  const [images, setImages] = useState<CatProps[]>([])
 
-  const initialUrl = 'https://api.thecatapi.com/v1/images/search?limit=15&'
-  const auth = 'YOUR API KEY'
-
-  const url = initialUrl+auth
-
-  async function loadImages() {
-    await fetch(url, { headers: { 'Authorization': `x-api-key ${auth}` } })
-      .then(response => response.json())
-      .then(data => setImages(data))
+  async function loadCats() {
+    try {
+      const data = await CatService()
+      setImages(data)
+    } catch (err) {
+      console.error(err)
+    }
   }
+  
 
   useEffect(() => {
-    loadImages()
+    loadCats()
   }, [])
 
   return(
