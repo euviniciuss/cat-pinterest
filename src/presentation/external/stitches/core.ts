@@ -1,7 +1,7 @@
 import { createStitches } from '@stitches/react'
 import type * as Stitches from '@stitches/react'
 
-export const { styled, css, globalCss, theme, createTheme, getCssText, config } = createStitches({
+export const { styled, css, globalCss, theme, createTheme, getCssText, config, keyframes } = createStitches({
   media: {
     bp1: '(max-width: 640px)',
     bp2: '(max-width: 768px)',
