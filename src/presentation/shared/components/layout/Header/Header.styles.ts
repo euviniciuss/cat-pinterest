@@ -8,6 +8,10 @@ export const Container = styled('header', {
   top: '0',
   left: '0',
   zIndex: '$1',
+
+  '@bp1': {
+    display: 'none',
+  }
 })
 
 export const Wrapper = styled('div', {
@@ -75,10 +79,21 @@ export const UserSection = styled('button', {
     background: '$gray500',
   },
 
+  
   img: {
     width: '3.2rem',
     height: '3.2rem',
     borderRadius: '50%',
-    objectFit: 'cover'
+    objectFit: 'cover',
+  },
+
+  '@bp1': {
+    padding: '0.3rem',
+
+    img: {
+      width: '5rem',
+      height: '5rem',
+    }
   }
+
 })

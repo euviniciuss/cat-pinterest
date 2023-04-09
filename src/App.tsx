@@ -12,6 +12,7 @@ export default function App() {
     <BrowserRouter>
       <Page.Header />
       <Routes />
+      <Page.BottomBar />
     </BrowserRouter>
   )
 }

@@ -5,4 +5,10 @@ export const Wrapper = styled('main', {
   margin: 'auto',
   marginTop: '8rem',
   paddingBottom: '2rem',
+
+  '@bp1': {
+    px: '1.6rem',
+    marginTop: '1.5rem',
+    marginBottom: '8rem',
+  }
 })
