@@ -5,11 +5,4 @@ export const Container = styled('section', {
 
   columnCount: '7',
   columnGap: '1.6rem',
-
-  div: {
-    '& + div': {
-      mt: '1.6rem',
-    }
-
-  }
 })

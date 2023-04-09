@@ -7,26 +7,9 @@ export const Container = styled('div', {
   marginBottom: '1.6rem',
 
   img: {
-    width: '236px',
-    height: '100%',
+    width: '100%',
+    height: 'auto',
     borderRadius: '$5',
     objectFit: 'cover'
   },
-
-  variants: {
-    size: {
-      '1-sm': {
-        height: '209px',
-      },
-      'sm': {
-        height: '239px',
-      },
-      'md': {
-        height: '314px',
-      },
-      'lg': {
-        height: '427px',
-      },
-    }
-  }
 })

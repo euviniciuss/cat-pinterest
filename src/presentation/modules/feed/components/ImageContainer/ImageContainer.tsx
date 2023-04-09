@@ -1,14 +1,9 @@
-import { ReactNode } from 'react'
+import { PropsWithChildren } from 'react'
 
 import * as S from './ImageContainer.styles'
 
-type Props = {
-  sizeImg: 'sm' | 'md' | 'lg' | '1-sm'
-  children: ReactNode
-}
-
-export function ImageContainer({ children, sizeImg = 'md' }: Props) {
+export function ImageContainer({ children }: PropsWithChildren) {
   return(
-    <S.Container role='button' size={sizeImg}>{ children }</S.Container>
+    <S.Container role='button'>{ children }</S.Container>
   )
 }
