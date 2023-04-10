@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/.github/logo-extend.png" width="40%" alt="Cat Pinterest logo">
+  <img src="/.github/logo-extend.png" width="50%" alt="Cat Pinterest logo">
 </p>
 
 ## 💡 Cat Pinterest
