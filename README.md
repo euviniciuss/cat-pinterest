@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/.github/github-logo.png" width="35%" alt="Github logo">
+  <img src="/.github/logo-exentd.png" width="35%" alt="Github logo">
 </p>
 
 ## 💡 Cat Pinterest
