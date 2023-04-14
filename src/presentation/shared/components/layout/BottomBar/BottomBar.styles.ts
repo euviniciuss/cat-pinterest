@@ -8,7 +8,7 @@ export const Container = styled('footer', {
   position: 'fixed',
   bottom: '0',
   left: '0',
-  zIndex: '1',
+  zIndex: '$max',
   marginBottom: '1.4rem',
 
   '@bp1': {

@@ -14,7 +14,7 @@ export const Container = styled('div', {
   },
 
   '@bp3': {
-    width: '194px',
+    width: '256px',
   },
 
   '@bp2': {

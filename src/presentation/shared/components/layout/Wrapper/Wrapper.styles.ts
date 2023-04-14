@@ -5,6 +5,14 @@ export const Wrapper = styled('main', {
   margin: 'auto',
   marginTop: '8rem',
   paddingBottom: '2rem',
+  
+  '@bp3': {
+    px: '1.2rem',
+  },
+
+  '@bp2': {
+    px: '0.6rem',
+  },
 
   '@bp1': {
     px: '1.6rem',
