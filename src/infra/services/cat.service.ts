@@ -1,16 +1,14 @@
 import { CatProps } from '@/business/types/cat'
 
-const initialUrl = {
-  base_url: 'https://api.thecatapi.com/v1/images/search?',
-  limit: 'limit=30&',
-  auth: `api_key=${import.meta.env.VITE_API_KEY}`
-}
-
 export async function CatService(): Promise<CatProps[]> { 
-  const url = initialUrl.base_url + initialUrl.limit + initialUrl.auth
+  const AUTH_TOKEN = import.meta.env.VITE_API_KEY
+
+  const url = new URL('https://api.thecatapi.com/v1/images/search')
+  url.searchParams.set('limit', '30')
+  url.searchParams.set('api_key', AUTH_TOKEN)
   
   try {
-    const response = await fetch(url)
+    const response = await fetch(url.toString())
     const data = await response.json()
 
     return data as CatProps[]
