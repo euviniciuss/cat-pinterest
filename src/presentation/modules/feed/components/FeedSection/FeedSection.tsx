@@ -1,45 +1,29 @@
-import { useState, useEffect } from 'react'
-import { CatService, CatProps } from '@/infra/services/cat.service'
-import { Page } from '@/presentation/shared/components/layout'
-
-import { ImageContainer } from '../ImageContainer/ImageContainer'
-
-import * as S from './FeedSection.styles'
+// FeedSection.tsx
+import React, { useState } from 'react';
+import { CustomCheckbox } from './Checkbox';
 
 export function FeedSection() {
-  const [images, setImages] = useState<CatProps[]>([])
-  const [isLoading, setIsLoading] = useState(false)
+  const [selected, setSelected] = useState<string[]>([]);
 
-  async function loadCats() {
-    setIsLoading(true)
+  const handleCheck = (value: string) => {
+    console.log('teste');
 
-    try {
-      const data = await CatService()
-      setImages(data)
-      setIsLoading(false)
-    } catch (err) {
-      console.error(err)
+    if (selected.includes(value)) {
+      setSelected(selected.filter((item) => item !== value));
+    } else {
+      setSelected([...selected, value]);
     }
-  }
-  
-  useEffect(() => {
-    loadCats()
-  }, [])
 
-  return(
-    <>
-      { isLoading && <Page.Loading /> }
-      { !isLoading &&
-        <S.Container>
-          {
-            images.map((image: any) => ( 
-              <ImageContainer key={image.id}>
-                <img src={image.url} alt="cat image"/>
-              </ImageContainer>
-            ))
-          }  
-        </S.Container>
-      }
-    </>
-  )
+    console.log('Valor do checkbox:', value);
+  };
+
+  return (
+    <div>
+      <div>
+        <CustomCheckbox value="opaaaaa" checked={selected.includes('teste')} onChange={handleCheck} />
+        Teste
+      </div>
+      {/* Adicione mais CustomCheckboxes conforme necessário */}
+    </div>
+  );
 }
