@@ -34,14 +34,14 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0(vite@4.2.1)
   typescript:
-    specifier: ^4.9.3
-    version: 4.9.5
+    specifier: ^5.7.0
+    version: 5.7.2
   vite:
     specifier: ^4.2.0
     version: 4.2.1(@types/node@18.15.11)
   vite-plugin-tsconfig-paths:
     specifier: ^1.2.0
-    version: 1.2.0(typescript@4.9.5)(vite@4.2.1)
+    version: 1.2.0(typescript@5.7.2)(vite@4.2.1)
 
 packages:
 
@@ -885,17 +885,17 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript-paths@1.4.0(typescript@4.9.5):
+  /typescript-paths@1.4.0(typescript@5.7.2):
     resolution: {integrity: sha512-olt3yKj5d4ON5MpQgxvqpiN24ApsrdlRnIQFwqlbzuTjRZFQNoTOzzTJ13vyDRt7VW0cuO+g8HA+eoYfBLWWMA==}
     peerDependencies:
       typescript: ^4.7.2
     dependencies:
-      typescript: 4.9.5
+      typescript: 5.7.2
     dev: true
 
-  /typescript@4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
+  /typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+    engines: {node: '>=14.17'}
     hasBin: true
     dev: true
 
@@ -910,12 +910,12 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /vite-plugin-tsconfig-paths@1.2.0(typescript@4.9.5)(vite@4.2.1):
+  /vite-plugin-tsconfig-paths@1.2.0(typescript@5.7.2)(vite@4.2.1):
     resolution: {integrity: sha512-DpYiubYbrT3MzuJJ/DEavnbACiApoNM5RsH9HQHG5vDlTG4aRmKkwlw9gUFEeymCjvLTwmlScwtj0m02t3sgRQ==}
     peerDependencies:
       vite: '*'
     dependencies:
-      typescript-paths: 1.4.0(typescript@4.9.5)
+      typescript-paths: 1.4.0(typescript@5.7.2)
       vite: 4.2.1(@types/node@18.15.11)
     transitivePeerDependencies:
       - typescript
