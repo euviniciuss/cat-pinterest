@@ -2,8 +2,8 @@ import { PropsWithChildren } from 'react'
 
 import * as S from './Button.styles'
 
-export function Button({ children }: PropsWithChildren) {
+export function Button({ children, ...props }: PropsWithChildren<React.ButtonHTMLAttributes<HTMLButtonElement>>) {
   return(
-    <S.Button>{children}</S.Button>
+    <S.Button {...props}>{children}</S.Button>
   )
 }

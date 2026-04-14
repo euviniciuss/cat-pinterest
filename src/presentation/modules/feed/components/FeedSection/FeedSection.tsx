@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { CatService, CatProps } from '@/infra/services/cat.service'
+import { CatService, CatProps } from '../../../../../infra/services/get-cats'
 import { Page } from '@/presentation/shared/components/layout'
 
 import { ImageContainer } from '../ImageContainer/ImageContainer'

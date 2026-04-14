@@ -4,14 +4,20 @@ import { UploadSimple, DotsThree } from '@phosphor-icons/react'
 
 import * as S from './ImageContainer.styles'
 
+import Clarity from '@microsoft/clarity';
+
 export function HoverOptions() {
+  const handleSave = () => {
+    Clarity.event("save");
+  };
+
   return(
     <S.ContainerOptions className='hoverOptions'>
       <S.ContentOptions>
         <S.Header>
           <p>Meus Pins...</p>
 
-          <Button>Salvar</Button>
+          <Button onClick={handleSave}>Salvar</Button>
         </S.Header>
 
         <S.Footer>
